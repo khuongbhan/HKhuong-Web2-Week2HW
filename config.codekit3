@@ -19,12 +19,67 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/deploy/img/section-1/1.jpg": {
+		"ft": 16384,
+		"iS": 52983,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/section-1/1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/deploy/img/section-2/2.jpg": {
 		"ft": 16384,
-		"iS": 1967071,
+		"iS": 114490,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/deploy/img/section-2/2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/section-3/3.jpg": {
+		"ft": 16384,
+		"iS": 50682,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/section-3/3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/section-5/4.jpg": {
+		"ft": 16384,
+		"iS": 71643,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/section-5/4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/section-5/5.jpg": {
+		"ft": 16384,
+		"iS": 53669,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/section-5/5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/section-5/6.jpg": {
+		"ft": 16384,
+		"iS": 61194,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/section-5/6.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -309,7 +364,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 607269039.62657595,
-	"displayValue": "Week 2 In-Class",
+	"displayValue": "HKhuong-Web2-Week2HW",
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "brackets_orange",
 	"iconImageWasSetByUser": 0
