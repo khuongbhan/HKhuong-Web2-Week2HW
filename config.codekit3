@@ -19,6 +19,17 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/deploy/img/section-2/2.jpg": {
+		"ft": 16384,
+		"iS": 1967071,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/section-2/2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/deploy/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -254,6 +265,14 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/dev/section-4.html",
+		"oF": 0
+		},
+	"/dev/section-5.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/dev/section-5.html",
 		"oF": 0
 		},
 	"/dev/section-5.kit": {
