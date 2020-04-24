@@ -27,7 +27,7 @@
 		"oAP": "/deploy/img/section-1/1.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/deploy/img/section-2/2.jpg": {
@@ -38,7 +38,7 @@
 		"oAP": "/deploy/img/section-2/2.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/deploy/img/section-3/3.jpg": {
@@ -80,6 +80,17 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/deploy/img/section-5/6.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/section-6/circle.jpg": {
+		"ft": 16384,
+		"iS": 40572,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/section-6/circle.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -269,6 +280,84 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/dev/scss/section/_section-1.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/section/_section-1.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/scss/section/_section-2.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/section/_section-2.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/scss/section/_section-3.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/section/_section-3.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/scss/section/_section-4.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/section/_section-4.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/scss/section/_section-5.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/section/_section-5.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/scss/section/_section-6.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/section/_section-6.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/dev/scss/styles.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -336,6 +425,22 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/dev/section-5.html",
+		"oF": 0
+		},
+	"/dev/section-6.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/dev/section-6.html",
+		"oF": 0
+		},
+	"/dev/section-6.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/section-6.html",
 		"oF": 0
 		},
 	"/README.md": {
