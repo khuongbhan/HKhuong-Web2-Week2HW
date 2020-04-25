@@ -1,3 +1,15 @@
 /* =============
     Section 4
 ============= */
+#section-4 {
+    hr {
+        border-top: 2px solid $section4-hrorange;
+    }
+
+    h3 {
+        color: $footer-orange;
+        font-family: 'Playfair Display';
+        text-align: center;
+        font-size: 27px;
+    }
+}

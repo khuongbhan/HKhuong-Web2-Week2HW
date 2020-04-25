@@ -1,3 +1,22 @@
 /* =============
     Section 2
 ============= */
+#section-2 {
+    hr {
+        border-top: 2px solid $hr-orange;
+        margin: 10px;
+    }
+
+    h1 {
+        color: $section2-h1brown;
+        font-size: 25px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    p {
+        color: $section2-brown;
+        font-size: 16px;
+        text-align: center;
+    }
+}

@@ -4,7 +4,17 @@
 footer {
 
     background-color: $footer-orange;
-    color: $white;
     padding: 10px 0;
+
+    h4 {
+        color: white;
+        margin: 10px;
+    }
+    
+    p {
+        color: white;
+        text-align: right;
+        margin: 10px;
+    }
 
 }
