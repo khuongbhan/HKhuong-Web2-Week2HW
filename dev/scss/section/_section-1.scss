@@ -2,11 +2,23 @@
     Section 1
 ============= */
 #section-1 {
+    img {
+        width: 100%;
+    }
+
+    .title-container {
+        display: grid;
+        grid-template-columns: 15px auto 15px;
+        grid-template-areas: ". title-container .";
+    }
+
     h1.biggest {
+        grid-area: title-container;
         font-family: 'Playfair Display';
         font-size: 44px;
         text-align: center;
-        font-weight: 700;
+        
+        
     }
     
 }

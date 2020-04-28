@@ -1,20 +1,26 @@
 /* =============
     Footer
 ============= */
-footer {
+#footer {
+    display: grid;
+    grid-template-columns: 10px auto 10px;
+    grid-template-areas: ". footer ."; 
+
 
     background-color: $footer-orange;
-    padding: 10px 0;
 
-    h4 {
-        color: white;
-        margin: 10px;
+    .footer-container {
+        grid-area: footer;
+
+        h4 {
+            color: white;
+        }
+
+        p {
+            color: white;
+            text-align: right;
+        }
     }
-    
-    p {
-        color: white;
-        text-align: right;
-        margin: 10px;
-    }
+
 
 }

@@ -2,21 +2,49 @@
     Section 2
 ============= */
 #section-2 {
-    hr {
-        border-top: 2px solid $hr-orange;
-        margin: 10px;
+    img {
+        width: 100%;
     }
 
-    h1 {
-        color: $section2-h1brown;
-        font-size: 25px;
-        text-align: center;
-        font-weight: bold;
+    .section-2-container {
+        display: grid;
+        grid-template-columns: 15px auto 15px;
+        grid-template-areas: 
+        ". hr1 ."
+        ". content ."
+        ". hr2 ."
+        ;
+
+        .horizontalrule1 {
+            
+            grid-area: hr1;
+            hr {
+                border-top-color: 2px solid $footer-orange;
+            }
+        }
+
+        .section-2-content {
+            grid-area: content;
+            .head1 {
+                color: $section2-h1brown;
+                font-size: 25px;
+                text-align: center;
+                font-weight: bold;
+            }
+            .paragraph1 {
+                color: $section2-brown;
+                font-size: 16px;
+                text-align: center;
+            }
+        }
+
+        .horizontalrule2 {
+            grid-area: hr2;
+            hr {
+                border-top-color: 2px solid $footer-orange;
+            }
+        }
     }
 
-    p {
-        color: $section2-brown;
-        font-size: 16px;
-        text-align: center;
-    }
+    
 }

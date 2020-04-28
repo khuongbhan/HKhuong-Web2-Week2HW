@@ -2,7 +2,14 @@
     Section 5
 ============= */
 #section-5 {
-    li {
-        margin-bottom: 20px;
+    .gallery {
+        display: grid;
+        gap: 20px;
+
+        li {
+            img {
+                width: 100%;
+            }
+        }
     }
 }

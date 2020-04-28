@@ -2,14 +2,40 @@
     Section 4
 ============= */
 #section-4 {
-    hr {
-        border-top: 2px solid $section4-hrorange;
-    }
 
-    h3 {
-        color: $footer-orange;
-        font-family: 'Playfair Display';
-        text-align: center;
-        font-size: 27px;
+    .section-4-container {
+        display: grid;
+        grid-template-columns: 15px auto 15px;
+        grid-template-areas: 
+        ". d1 ."
+        ". content ."
+        ". d2 .";
+
+        .divider1 {
+            grid-area: d1;
+            hr {
+                border-top: 2px solid $section4-hrorange;
+            }
+        }
+
+        .section-4-content {
+            grid-area: content;
+            h3 {
+                color: $footer-orange;
+                font-family: 'Playfair Display';
+                text-align: center;
+                font-size: 27px;
+            }
+        }
+
+        .divider2 {
+            grid-area: d2;
+            hr {
+                border-top: 2px solid $section4-hrorange;
+            }
+        }
     }
+    
+
+    
 }

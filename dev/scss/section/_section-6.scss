@@ -2,13 +2,25 @@
     Section 6
 ============= */
 #section-6 {
+    display: grid;
+    grid-template-columns: 15px auto 15px;
+    grid-template-areas: ". content .";
+
+
+    .section-6-content {
+        grid-area: content;
+
+        
+    }
+
+
+
+
     p {
         color: $section2-h1brown;
         margin: 10px;
     }
 
-    >div {
-        margin: 20px;
-    }
+    
 
 }
