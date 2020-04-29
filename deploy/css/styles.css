@@ -392,6 +392,7 @@ textarea {
     Section 1
 ============= */
 #section-1 img {
+  grid-area: section-1;
   width: 100%; }
 
 #section-1 .title-container {
@@ -428,7 +429,7 @@ textarea {
 
 #section-2 > div .section-2-container {
   display: grid;
-  grid-template-columns: 10px auto 10px;
+  grid-template-columns: 15px auto 15px;
   grid-template-areas: ". hr1 ." ". content ." ". hr2 ."; }
   @media (min-width: 768px) {
     #section-2 > div .section-2-container {

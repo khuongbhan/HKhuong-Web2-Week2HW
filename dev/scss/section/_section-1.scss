@@ -2,9 +2,14 @@
     Section 1
 ============= */
 #section-1 {
+    
     img {
+        grid-area: section-1;
         width: 100%;
     }
+
+    
+    
 
     .title-container {
         display: grid;
