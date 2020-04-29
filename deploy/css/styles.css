@@ -408,31 +408,49 @@ textarea {
 /* =============
     Section 2
 ============= */
-#section-2 img {
+@media (min-width: 1200px) {
+  #section-2 {
+    display: grid;
+    grid-template-columns: auto 1200px auto;
+    grid-template-areas: ". section-2 ."; } }
+
+@media (min-width: 992px) {
+  #section-2 > div {
+    display: grid;
+    grid-template-columns: 40% auto; } }
+
+@media (min-width: 1200px) {
+  #section-2 > div {
+    grid-area: section-2; } }
+
+#section-2 > div aside img {
   width: 100%; }
 
-#section-2 .section-2-container {
+#section-2 > div .section-2-container {
   display: grid;
-  grid-template-columns: 15px auto 15px;
+  grid-template-columns: 10px auto 10px;
   grid-template-areas: ". hr1 ." ". content ." ". hr2 ."; }
-  #section-2 .section-2-container .horizontalrule1 {
+  @media (min-width: 768px) {
+    #section-2 > div .section-2-container {
+      grid-template-columns: 10% auto 10%; } }
+  #section-2 > div .section-2-container .horizontalrule1 {
     grid-area: hr1; }
-    #section-2 .section-2-container .horizontalrule1 hr {
+    #section-2 > div .section-2-container .horizontalrule1 hr {
       border-top-color: 2px solid #E4A468; }
-  #section-2 .section-2-container .section-2-content {
+  #section-2 > div .section-2-container .section-2-content {
     grid-area: content; }
-    #section-2 .section-2-container .section-2-content .head1 {
+    #section-2 > div .section-2-container .section-2-content .head1 {
       color: #C15307;
       font-size: 25px;
       text-align: center;
       font-weight: bold; }
-    #section-2 .section-2-container .section-2-content .paragraph1 {
+    #section-2 > div .section-2-container .section-2-content .paragraph1 {
       color: #8F490C;
       font-size: 16px;
       text-align: center; }
-  #section-2 .section-2-container .horizontalrule2 {
+  #section-2 > div .section-2-container .horizontalrule2 {
     grid-area: hr2; }
-    #section-2 .section-2-container .horizontalrule2 hr {
+    #section-2 > div .section-2-container .horizontalrule2 hr {
       border-top-color: 2px solid #E4A468; }
 
 /* =============
