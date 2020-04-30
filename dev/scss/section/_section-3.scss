@@ -3,6 +3,11 @@
 ============= */
 #section-3 {
     img {
+        display: grid; 
         width: 100%;
+
+        @include lg {
+            max-width: 1025px;
+        }
     }
 }

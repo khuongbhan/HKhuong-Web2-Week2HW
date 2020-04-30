@@ -2,14 +2,44 @@
     Section 5
 ============= */
 #section-5 {
-    .gallery {
-        display: grid;
-        gap: 20px;
 
-        li {
-            img {
-                width: 100%;
+    div {
+        ul {
+            display: grid;
+            grid-row-gap: 10px;
+            grid-column-gap: 10px;
+
+            @include md {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: 
+                "gallery-1 gallery-2"
+                "gallery-1 gallery-3";
+
             }
+
+            .gallery-1 {
+                @include md {
+                    grid-area: gallery-1;
+
+                }
+            }
+
+            .gallery-2 {
+                @include md {
+                    grid-area: gallery-2;
+
+                }
+            }
+
+            .gallery-3 {
+                @include md {
+                    grid-area: gallery-3;
+
+                }
+            }
+
+
         }
     }
 }

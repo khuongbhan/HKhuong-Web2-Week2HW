@@ -391,21 +391,18 @@ textarea {
 /* =============
     Section 1
 ============= */
-#section-1 img {
-  grid-area: section-1;
-  width: 100%; }
-
 #section-1 .title-container {
-  display: grid;
-  grid-template-columns: 15px auto 15px;
-  grid-template-areas: ". title-container ."; }
-
-#section-1 h1.biggest {
-  grid-area: title-container;
-  font-family: 'Playfair Display';
-  font-size: 44px;
-  text-align: center; }
-
+  display: grid; }
+  #section-1 .title-container h1.biggest {
+    font-family: 'Playfair Display';
+    font-size: 44px;
+    text-align: center; }
+  #section-1 .title-container img {
+    width: 100%; }
+    @media (min-width: 992px) {
+      #section-1 .title-container img {
+        display: grid;
+        max-width: 1025px; } }
 /* =============
     Section 2
 ============= */
@@ -458,8 +455,11 @@ textarea {
     Section 3
 ============= */
 #section-3 img {
+  display: grid;
   width: 100%; }
-
+  @media (min-width: 992px) {
+    #section-3 img {
+      max-width: 1025px; } }
 /* =============
     Section 4
 ============= */
@@ -486,21 +486,40 @@ textarea {
 /* =============
     Section 5
 ============= */
-#section-5 .gallery {
+#section-5 div ul {
   display: grid;
-  gap: 20px; }
-  #section-5 .gallery li img {
-    width: 100%; }
-
+  grid-row-gap: 10px;
+  grid-column-gap: 10px; }
+  @media (min-width: 768px) {
+    #section-5 div ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "gallery-1 gallery-2" "gallery-1 gallery-3"; } }
+  @media (min-width: 768px) {
+    #section-5 div ul .gallery-1 {
+      grid-area: gallery-1; } }
+  @media (min-width: 768px) {
+    #section-5 div ul .gallery-2 {
+      grid-area: gallery-2; } }
+  @media (min-width: 768px) {
+    #section-5 div ul .gallery-3 {
+      grid-area: gallery-3; } }
 /* =============
     Section 6
 ============= */
-#section-6 {
+#section-6 div {
   display: grid;
-  grid-template-columns: 15px auto 15px;
-  grid-template-areas: ". content ."; }
-  #section-6 .section-6-content {
-    grid-area: content; }
-  #section-6 p {
-    color: #C15307;
-    margin: 10px; }
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: ". section-6-aside ." "section-6-content section-6-content section-6-content"; }
+  @media (min-width: 992px) {
+    #section-6 div {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "section-6-aside section-6-content"; } }
+  #section-6 div .section-6-content {
+    grid-area: section-6-content; }
+    #section-6 div .section-6-content p {
+      color: #C15307;
+      margin: 10px; }
+  #section-6 div aside {
+    grid-area: section-6-aside; }
