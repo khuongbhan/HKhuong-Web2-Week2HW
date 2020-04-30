@@ -2,27 +2,52 @@
     Section 1
 ============= */
 #section-1 {
-
-
+    
     .title-container {
-        display: grid;
+        color: white;
+        font-size: 36px;
 
-        h1.biggest {
-            
-            font-family: 'Playfair Display';
-            font-size: 44px;
-            text-align: center;
+        @include lg {
+            position: absolute;
+            left: 118px;
+            top: 183px;
         }
 
-        img {
-            width: 100%;
-            
-
-            @include lg {
-                display: grid;
-                max-width: 1025px;
-
-            }
+        @include sm {
+            position: absolute;
+            top: 55px;
+            left: 27px;
         }
+        
+
     }
+
+    display: grid;
+    background-image: url('../img/section-1/1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 684px;
+        
+
+    @include xl {
+        max-width: 1025px;
+        height: 684px;
+    }
+
+    @include sm {
+        background-position-x: -110px;
+    }
+
+    @include md {
+        background-position-x: -19px;
+        height: 536px;
+        background-position-y: -24px;
+    }
+
+    @include lg {
+        background-position-x: 0;
+        height: 684px;
+    }
+    
 }

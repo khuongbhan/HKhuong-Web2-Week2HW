@@ -45,7 +45,7 @@
             
                 grid-area: hr1;
                 hr {
-                    border-top-color: 2px solid $footer-orange;
+                    border-top: 2px solid $footer-orange;
                 }
             }
 
@@ -67,7 +67,7 @@
             .horizontalrule2 {
                 grid-area: hr2;
                 hr {
-                    border-top-color: 2px solid $footer-orange;
+                    border-top: 2px solid $footer-orange;
                 }
             }
         }

@@ -345,7 +345,10 @@ ul {
 body {
   font-family: 'Didot', serif; }
 
-h1, h2, h3, h4 {
+h1 {
+  font-family: 'Playfair Display'; }
+
+h2, h3, h4 {
   font-family: 'Didot'; }
 
 /* =============
@@ -391,18 +394,42 @@ textarea {
 /* =============
     Section 1
 ============= */
-#section-1 .title-container {
-  display: grid; }
-  #section-1 .title-container h1.biggest {
-    font-family: 'Playfair Display';
-    font-size: 44px;
-    text-align: center; }
-  #section-1 .title-container img {
-    width: 100%; }
+#section-1 {
+  display: grid;
+  background-image: url("../img/section-1/1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 684px; }
+  #section-1 .title-container {
+    color: white;
+    font-size: 36px; }
     @media (min-width: 992px) {
-      #section-1 .title-container img {
-        display: grid;
-        max-width: 1025px; } }
+      #section-1 .title-container {
+        position: absolute;
+        left: 118px;
+        top: 183px; } }
+    @media (min-width: 576px) {
+      #section-1 .title-container {
+        position: absolute;
+        top: 55px;
+        left: 27px; } }
+  @media (min-width: 1200px) {
+    #section-1 {
+      max-width: 1025px;
+      height: 684px; } }
+  @media (min-width: 576px) {
+    #section-1 {
+      background-position-x: -110px; } }
+  @media (min-width: 768px) {
+    #section-1 {
+      background-position-x: -19px;
+      height: 536px;
+      background-position-y: -24px; } }
+  @media (min-width: 992px) {
+    #section-1 {
+      background-position-x: 0;
+      height: 684px; } }
 /* =============
     Section 2
 ============= */
@@ -434,7 +461,7 @@ textarea {
   #section-2 > div .section-2-container .horizontalrule1 {
     grid-area: hr1; }
     #section-2 > div .section-2-container .horizontalrule1 hr {
-      border-top-color: 2px solid #E4A468; }
+      border-top: 2px solid #E4A468; }
   #section-2 > div .section-2-container .section-2-content {
     grid-area: content; }
     #section-2 > div .section-2-container .section-2-content .head1 {
@@ -449,7 +476,7 @@ textarea {
   #section-2 > div .section-2-container .horizontalrule2 {
     grid-area: hr2; }
     #section-2 > div .section-2-container .horizontalrule2 hr {
-      border-top-color: 2px solid #E4A468; }
+      border-top: 2px solid #E4A468; }
 
 /* =============
     Section 3
