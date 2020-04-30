@@ -18,6 +18,12 @@
             top: 55px;
             left: 27px;
         }
+
+        @include md {
+            position: absolute;
+            top: 82px;
+            left: 167px;
+        }
         
 
     }

@@ -414,6 +414,11 @@ textarea {
         position: absolute;
         top: 55px;
         left: 27px; } }
+    @media (min-width: 768px) {
+      #section-1 .title-container {
+        position: absolute;
+        top: 82px;
+        left: 167px; } }
   @media (min-width: 1200px) {
     #section-1 {
       max-width: 1025px;
