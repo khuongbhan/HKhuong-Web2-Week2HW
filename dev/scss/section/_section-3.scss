@@ -2,12 +2,21 @@
     Section 3
 ============= */
 #section-3 {
-    img {
-        display: grid; 
-        width: 100%;
+    // img {
+    //     display: grid; 
+    //     width: 100%;
 
-        @include lg {
-            max-width: 1025px;
-        }
+    //     @include lg {
+    //         max-width: 1025px;
+    //     }
+    // }
+    
+    section {
+        display: grid;
+        background-image: url('../img/section-3/3.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 516px;
     }
 }

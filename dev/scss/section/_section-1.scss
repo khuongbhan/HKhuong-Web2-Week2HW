@@ -7,6 +7,7 @@
         color: white;
         font-size: 36px;
 
+
         @include lg {
             position: absolute;
             left: 118px;
@@ -37,6 +38,7 @@
         
 
     @include xl {
+        grid-template-columns: auto 1025px auto;
         max-width: 1025px;
         height: 684px;
     }
