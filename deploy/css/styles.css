@@ -443,37 +443,45 @@ textarea {
 /* =============
     Section 2
 ============= */
-@media (min-width: 1200px) {
-  #section-2 {
-    display: grid;
-    grid-template-columns: auto 1200px auto;
-    grid-template-areas: ". section-2 ."; } }
-
-@media (min-width: 992px) {
-  #section-2 > div {
-    display: grid;
-    grid-template-columns: 40% auto; } }
-
-@media (min-width: 1200px) {
-  #section-2 > div {
-    grid-area: section-2; } }
-
-#section-2 > div aside img {
-  width: 100%; }
-
-#section-2 > div .section-2-container {
-  display: grid;
-  grid-template-columns: 15px auto 15px;
-  grid-template-areas: ". hr1 ." ". content ." ". hr2 ."; }
+#section-2 {
+  padding-bottom: 32px; }
+  @media (min-width: 1200px) {
+    #section-2 {
+      display: grid;
+      grid-template-columns: auto 1200px auto;
+      grid-template-areas: ". section-2-container ."; } }
+  @media (min-width: 992px) {
+    #section-2 > div {
+      display: grid;
+      grid-template-columns: 40% auto; } }
+  @media (min-width: 1200px) {
+    #section-2 > div {
+      grid-area: section-2-container; } }
+  #section-2 > div aside {
+    background-image: url("../img/section-2/plateofdonuts.jpg");
+    background-size: cover; }
+    @media (min-width: 768px) {
+      #section-2 > div aside {
+        grid-area: section-2-image;
+        height: 550px; } }
+    @media (min-width: 992px) {
+      #section-2 > div aside {
+        height: 650px; } }
+    @media (min-width: 1200px) {
+      #section-2 > div aside {
+        height: 740px; } }
   @media (min-width: 768px) {
     #section-2 > div .section-2-container {
-      grid-template-columns: 10% auto 10%; } }
-  #section-2 > div .section-2-container .horizontalrule1 {
-    grid-area: hr1; }
-    #section-2 > div .section-2-container .horizontalrule1 hr {
-      border-top: 2px solid #E4A468; }
+      display: grid;
+      grid-template-columns: 40% auto;
+      grid-template-areas: "section-2-image section-2-content"; } }
+  @media (min-width: 1200px) {
+    #section-2 > div .section-2-container {
+      grid-area: section-2-container; } }
   #section-2 > div .section-2-container .section-2-content {
-    grid-area: content; }
+    grid-area: section-2-content; }
+    #section-2 > div .section-2-container .section-2-content hr {
+      border-top: 2px solid #E4A468; }
     #section-2 > div .section-2-container .section-2-content .head1 {
       color: #C15307;
       font-size: 25px;
@@ -483,10 +491,6 @@ textarea {
       color: #8F490C;
       font-size: 16px;
       text-align: center; }
-  #section-2 > div .section-2-container .horizontalrule2 {
-    grid-area: hr2; }
-    #section-2 > div .section-2-container .horizontalrule2 hr {
-      border-top: 2px solid #E4A468; }
 
 /* =============
     Section 3

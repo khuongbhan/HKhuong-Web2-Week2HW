@@ -2,11 +2,12 @@
     Section 2
 ============= */
 #section-2 {
+    padding-bottom: 32px;
     
     @include xl {
         display: grid;
         grid-template-columns: auto 1200px auto;
-        grid-template-areas: ". section-2 .";
+        grid-template-areas: ". section-2-container .";
     }
 
 
@@ -18,41 +19,55 @@
         }
 
         @include xl {
-            grid-area: section-2;
+            grid-area: section-2-container;
         }
 
         
 
         aside {
-            img {
-                width: 100%;
+            background-image: url('../img/section-2/plateofdonuts.jpg');
+            background-size: cover;
+
+            @include md {
+                grid-area: section-2-image;
+                height: 550px;
+            }
+
+            @include lg {
+                height: 650px;
+            }
+
+            @include xl {
+                height: 740px;
             }
         }
     
 
         .section-2-container {
-            display: grid;
-            grid-template-columns: 15px auto 15px;
-            grid-template-areas: 
-            ". hr1 ."
-            ". content ."
-            ". hr2 ."
-            ;
+            // display: grid;
+            // grid-template-columns: auto 1200px auto;
+            // grid-template-areas: 
+            // ". section-2-article ."
+            // ;
 
             @include md {
-                grid-template-columns: 10% auto 10%;
+                display: grid;
+                grid-template-columns: 40% auto;
+                grid-template-areas: "section-2-image section-2-content";
             }
-
-            .horizontalrule1 {
-            
-                grid-area: hr1;
-                hr {
-                    border-top: 2px solid $footer-orange;
-                }
+            @include xl {
+                grid-area: section-2-container;
             }
 
             .section-2-content {
-                grid-area: content;
+                grid-area: section-2-content;
+
+                
+                hr {
+                    border-top: 2px solid $footer-orange;
+                }
+                
+
                 .head1 {
                     color: $section2-h1brown;
                     font-size: 25px;
@@ -64,14 +79,10 @@
                     font-size: 16px;
                     text-align: center;
                 }
+                
             }
 
-            .horizontalrule2 {
-                grid-area: hr2;
-                hr {
-                    border-top: 2px solid $footer-orange;
-                }
-            }
+            
         }
 
     } 
