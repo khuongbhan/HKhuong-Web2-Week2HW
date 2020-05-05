@@ -405,11 +405,6 @@ textarea {
   #section-1 .title-container {
     color: white;
     font-size: 32px; }
-    @media (min-width: 992px) {
-      #section-1 .title-container {
-        position: absolute;
-        left: 118px;
-        top: 183px; } }
     @media (min-width: 576px) {
       #section-1 .title-container {
         position: absolute;
@@ -420,11 +415,11 @@ textarea {
         position: absolute;
         top: 82px;
         left: 167px; } }
-  @media (min-width: 1200px) {
-    #section-1 {
-      grid-template-columns: auto 1025px auto;
-      max-width: 1025px;
-      height: 684px; } }
+    @media (min-width: 992px) {
+      #section-1 .title-container {
+        position: absolute;
+        left: 118px;
+        top: 183px; } }
   @media (min-width: 576px) {
     #section-1 {
       background-position-x: -110px;
@@ -440,6 +435,11 @@ textarea {
       background-position-x: 0;
       height: 684px;
       padding-bottom: 59px; } }
+  @media (min-width: 1200px) {
+    #section-1 {
+      grid-template-columns: auto 1025px auto;
+      max-width: 1025px;
+      height: 684px; } }
 /* =============
     Section 2
 ============= */

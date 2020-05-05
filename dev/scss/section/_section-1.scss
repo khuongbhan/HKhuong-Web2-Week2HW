@@ -8,11 +8,11 @@
         font-size: 32px;
 
 
-        @include lg {
-            position: absolute;
-            left: 118px;
-            top: 183px;
-        }
+        // @include lg {
+        //     position: absolute;
+        //     left: 118px;
+        //     top: 183px;
+        // }
 
         @include sm {
             position: absolute;
@@ -24,6 +24,12 @@
             position: absolute;
             top: 82px;
             left: 167px;
+        }
+
+        @include lg {
+            position: absolute;
+            left: 118px;
+            top: 183px;
         }
         
 
@@ -38,11 +44,11 @@
     padding-bottom: 59px;
         
 
-    @include xl {
-        grid-template-columns: auto 1025px auto;
-        max-width: 1025px;
-        height: 684px;
-    }
+    // @include xl {
+    //     grid-template-columns: auto 1025px auto;
+    //     max-width: 1025px;
+    //     height: 684px;
+    // }
 
     @include sm {
         background-position-x: -110px;
@@ -60,6 +66,12 @@
         background-position-x: 0;
         height: 684px;
         padding-bottom: 59px;
+    }
+
+    @include xl {
+        grid-template-columns: auto 1025px auto;
+        max-width: 1025px;
+        height: 684px;
     }
     
 }
