@@ -2,6 +2,7 @@
     Section 6
 ============= */
 #section-6 {
+    padding-top: 40px;
     
     div {
         display: grid;
@@ -16,6 +17,14 @@
 
         }
 
+        @include md {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: ". section-6-aside ."
+            "section-6-content section-6-content";
+
+        }
+
         .section-6-content {
             grid-area: section-6-content;
             
@@ -23,10 +32,13 @@
                 color: #C15307;
                 margin: 10px;
             }
+
+
         }
 
         aside {
             grid-area: section-6-aside;
+            
         }
 
     }

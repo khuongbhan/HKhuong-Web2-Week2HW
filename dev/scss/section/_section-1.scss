@@ -5,7 +5,7 @@
     
     .title-container {
         color: white;
-        font-size: 36px;
+        font-size: 32px;
 
 
         @include lg {
@@ -35,6 +35,7 @@
     background-position: center;
     background-repeat: no-repeat;
     height: 684px;
+    padding-bottom: 59px;
         
 
     @include xl {
@@ -45,17 +46,20 @@
 
     @include sm {
         background-position-x: -110px;
+        padding-bottom: 59px;
     }
 
     @include md {
         background-position-x: -19px;
         height: 536px;
         background-position-y: -24px;
+        padding-bottom: 51px;
     }
 
     @include lg {
         background-position-x: 0;
         height: 684px;
+        padding-bottom: 59px;
     }
     
 }

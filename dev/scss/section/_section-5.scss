@@ -4,22 +4,45 @@
 #section-5 {
 
     div {
+        display: grid;
+        grid-template-areas: ". section-4 .";
+
         ul {
-            display: grid;
-            grid-row-gap: 10px;
-            grid-column-gap: 10px;
+            grid-area: section-4;
+            gap: 20px;
+            // grid-row-gap: 10px;
+            // grid-column-gap: 10px;
+
+            @include lg {
+                display: grid;
+                grid-template-columns: 60% auto;
+                grid-template-areas: 
+                "gallery-1 gallery-1"
+                "gallery-2 gallery-3";
+
+            }
 
             @include md {
                 display: grid;
-                grid-template-columns: 1fr 1fr;
+                grid-template-columns: 60% auto;
                 grid-template-areas: 
                 "gallery-1 gallery-2"
                 "gallery-1 gallery-3";
 
             }
 
+            li {
+                img {
+                    width: 100%;
+                }
+            }
+
             .gallery-1 {
                 @include md {
+                    grid-area: gallery-1;
+
+                }
+                @include lg {
                     grid-area: gallery-1;
 
                 }
@@ -30,12 +53,20 @@
                     grid-area: gallery-2;
 
                 }
+                @include lg {
+                    grid-area: gallery-2;
+
+                }
             }
 
             .gallery-3 {
                 @include md {
                     grid-area: gallery-3;
 
+                }
+
+                @include lg {
+                    grid-area: gallery-3;
                 }
             }
 
