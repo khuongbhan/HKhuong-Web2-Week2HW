@@ -544,12 +544,12 @@ textarea {
   #section-5 div ul {
     grid-area: section-4;
     gap: 20px; }
-    @media (min-width: 992px) {
+    @media (min-width: 768px) {
       #section-5 div ul {
         display: grid;
-        grid-template-columns: 60% auto;
+        grid-template-columns: 50% auto;
         grid-template-areas: "gallery-1 gallery-1" "gallery-2 gallery-3"; } }
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
       #section-5 div ul {
         display: grid;
         grid-template-columns: 60% auto;

@@ -13,16 +13,16 @@
             // grid-row-gap: 10px;
             // grid-column-gap: 10px;
 
-            @include lg {
+            @include md {
                 display: grid;
-                grid-template-columns: 60% auto;
+                grid-template-columns: 50% auto;
                 grid-template-areas: 
                 "gallery-1 gallery-1"
                 "gallery-2 gallery-3";
 
             }
 
-            @include md {
+            @include lg {
                 display: grid;
                 grid-template-columns: 60% auto;
                 grid-template-areas: 
@@ -30,6 +30,15 @@
                 "gallery-1 gallery-3";
 
             }
+
+            // @include md {
+            //     display: grid;
+            //     grid-template-columns: 50% auto;
+            //     grid-template-areas: 
+            //     "gallery-1 gallery-1"
+            //     "gallery-2 gallery-3";
+
+            // }
 
             li {
                 img {
