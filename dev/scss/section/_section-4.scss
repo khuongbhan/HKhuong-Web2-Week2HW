@@ -13,6 +13,15 @@
         ". content ."
         ". d2 .";
 
+        @include md {
+            grid-template-columns: auto 70% auto;
+
+        }
+
+        @include xl {
+            grid-template-columns: auto 650px auto;
+        }
+
         .divider1 {
             grid-area: d1;
             hr {

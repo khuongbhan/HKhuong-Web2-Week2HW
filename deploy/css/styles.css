@@ -519,6 +519,12 @@ textarea {
   display: grid;
   grid-template-columns: 15px auto 15px;
   grid-template-areas: ". d1 ." ". content ." ". d2 ."; }
+  @media (min-width: 768px) {
+    #section-4 .section-4-container {
+      grid-template-columns: auto 70% auto; } }
+  @media (min-width: 1200px) {
+    #section-4 .section-4-container {
+      grid-template-columns: auto 650px auto; } }
   #section-4 .section-4-container .divider1 {
     grid-area: d1; }
     #section-4 .section-4-container .divider1 hr {
