@@ -19,67 +19,67 @@
 		"oF": 0,
 		"oS": 3
 		},
-	"/deploy/img/section-1/1.jpg": {
+	"/deploy/img/section-1/cupofhottea.jpg": {
 		"ft": 16384,
 		"iS": 52983,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/section-1/1.jpg",
+		"oAP": "/deploy/img/section-1/cupofhottea.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"/deploy/img/section-2/2.jpg": {
+	"/deploy/img/section-2/plateofdonuts.jpg": {
 		"ft": 16384,
 		"iS": 114490,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/section-2/2.jpg",
+		"oAP": "/deploy/img/section-2/plateofdonuts.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"/deploy/img/section-3/3.jpg": {
+	"/deploy/img/section-3/teacups.jpg": {
 		"ft": 16384,
 		"iS": 50682,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/section-3/3.jpg",
+		"oAP": "/deploy/img/section-3/teacups.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/deploy/img/section-5/4.jpg": {
-		"ft": 16384,
-		"iS": 71643,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/section-5/4.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/deploy/img/section-5/5.jpg": {
-		"ft": 16384,
-		"iS": 53669,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/section-5/5.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/deploy/img/section-5/6.jpg": {
+	"/deploy/img/section-5/breakfastcupcake.jpg": {
 		"ft": 16384,
 		"iS": 61194,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/section-5/6.jpg",
+		"oAP": "/deploy/img/section-5/breakfastcupcake.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/section-5/peachcereal.jpg": {
+		"ft": 16384,
+		"iS": 53669,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/section-5/peachcereal.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/section-5/prettycupoftea.jpg": {
+		"ft": 16384,
+		"iS": 71643,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/section-5/prettycupoftea.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -445,7 +445,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 607269039.62657595,
-	"displayValue": "HKhuong-Web2-Week2HW",
+	"displayValue": "han-web2-homework",
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "brackets_orange",
 	"iconImageWasSetByUser": 0

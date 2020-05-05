@@ -13,14 +13,27 @@
     
     section {
         display: grid;
-        background-image: url('../img/section-3/3.jpg');
+        background-image: url('../img/section-3/teacups.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         height: 516px; 
+        
 
         @include sm {
             padding-top: 59px;
+        }
+
+        @include md {
+            height: 516px;
+        }
+
+        @include lg {
+            height: 683px;
+        }
+
+        @include xl {
+            max-width: 1025px;
         }
     }
 }
