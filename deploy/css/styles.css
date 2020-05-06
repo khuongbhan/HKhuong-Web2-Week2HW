@@ -450,48 +450,46 @@ textarea {
       display: grid;
       grid-template-columns: auto 1200px auto;
       grid-template-areas: ". section-2-container ."; } }
-  @media (min-width: 992px) {
-    #section-2 > div {
-      display: grid;
-      grid-template-columns: 40% auto; } }
-  @media (min-width: 1200px) {
-    #section-2 > div {
-      grid-area: section-2-container; } }
-  #section-2 > div aside {
-    background-image: url("../img/section-2/plateofdonuts.jpg");
-    background-size: cover; }
-    @media (min-width: 768px) {
-      #section-2 > div aside {
-        grid-area: section-2-image;
-        height: 550px; } }
-    @media (min-width: 992px) {
-      #section-2 > div aside {
-        height: 650px; } }
-    @media (min-width: 1200px) {
-      #section-2 > div aside {
-        height: 740px; } }
   @media (min-width: 768px) {
-    #section-2 > div .section-2-container {
+    #section-2 .section-2-container {
       display: grid;
       grid-template-columns: 40% auto;
-      grid-template-areas: "section-2-image section-2-content"; } }
+      grid-template-areas: "section-2-image section-2-content";
+      padding: 50px 0; } }
   @media (min-width: 1200px) {
-    #section-2 > div .section-2-container {
+    #section-2 .section-2-container {
       grid-area: section-2-container; } }
-  #section-2 > div .section-2-container .section-2-content {
-    grid-area: section-2-content; }
-    #section-2 > div .section-2-container .section-2-content hr {
+  #section-2 .section-2-container section {
+    grid-area: section-2-container;
+    margin: 60px 0; }
+    @media (min-width: 768px) {
+      #section-2 .section-2-container section {
+        margin: 0; } }
+    #section-2 .section-2-container section hr {
       border-top: 2px solid #E4A468; }
-    #section-2 > div .section-2-container .section-2-content .head1 {
+    #section-2 .section-2-container section .head1 {
       color: #C15307;
       font-size: 25px;
       text-align: center;
       font-weight: bold; }
-    #section-2 > div .section-2-container .section-2-content .paragraph1 {
+    #section-2 .section-2-container section .paragraph1 {
       color: #8F490C;
       font-size: 16px;
       text-align: center; }
-
+  #section-2 .section-2-container aside {
+    background-image: url("../img/section-2/plateofdonuts.jpg");
+    background-size: cover;
+    height: 516px; }
+    @media (min-width: 768px) {
+      #section-2 .section-2-container aside {
+        grid-area: section-2-image;
+        height: 550px; } }
+    @media (min-width: 992px) {
+      #section-2 .section-2-container aside {
+        height: 650px; } }
+    @media (min-width: 1200px) {
+      #section-2 .section-2-container aside {
+        height: 740px; } }
 /* =============
     Section 3
 ============= */
