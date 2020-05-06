@@ -460,11 +460,13 @@ textarea {
     #section-2 .section-2-container {
       grid-area: section-2-container; } }
   #section-2 .section-2-container section {
-    grid-area: section-2-container;
     margin: 60px 0; }
     @media (min-width: 768px) {
       #section-2 .section-2-container section {
         margin: 0; } }
+    #section-2 .section-2-container section .section-2-content {
+      padding: 0 15px;
+      grid-area: section-2-content; }
     #section-2 .section-2-container section hr {
       border-top: 2px solid #E4A468; }
     #section-2 .section-2-container section .head1 {
@@ -479,7 +481,7 @@ textarea {
   #section-2 .section-2-container aside {
     background-image: url("../img/section-2/plateofdonuts.jpg");
     background-size: cover;
-    height: 516px; }
+    height: 480px; }
     @media (min-width: 768px) {
       #section-2 .section-2-container aside {
         grid-area: section-2-image;
