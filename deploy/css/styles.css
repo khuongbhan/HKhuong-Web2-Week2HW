@@ -546,41 +546,55 @@ textarea {
 /* =============
     Section 5
 ============= */
-#section-5 div {
+@media (min-width: 1200px) {
+  #section-5 {
+    display: grid;
+    grid-template-columns: auto 1200px auto;
+    grid-template-areas: ". section-5 ."; } }
+
+#section-5 ul {
   display: grid;
-  grid-template-areas: ". section-4 ."; }
-  #section-5 div ul {
-    grid-area: section-4;
-    gap: 20px; }
+  grid-template-rows: repeat(3, 296px);
+  grid-gap: 20px; }
+  @media (min-width: 768px) {
+    #section-5 ul {
+      grid-template-columns: 50% auto;
+      grid-template-rows: repeat(3, 340px);
+      grid-template-areas: "gallery-1 gallery-1" "gallery-1 gallery-1" "gallery-2 gallery-3"; } }
+  @media (min-width: 992px) {
+    #section-5 ul {
+      grid-template-columns: 60% auto;
+      grid-template-areas: "gallery-1 gallery-2" "gallery-1 gallery-3"; } }
+  @media (min-width: 1200px) {
+    #section-5 ul {
+      grid-area: section-5; } }
+  #section-5 ul li {
+    background-position: center;
+    background-size: cover; }
+  #section-5 ul .gallery-1 {
+    background-image: url("../img/section-5/prettycupoftea.jpg"); }
     @media (min-width: 768px) {
-      #section-5 div ul {
-        display: grid;
-        grid-template-columns: 50% auto;
-        grid-template-areas: "gallery-1 gallery-1" "gallery-2 gallery-3"; } }
+      #section-5 ul .gallery-1 {
+        grid-area: gallery-1;
+        background-position: center top; } }
     @media (min-width: 992px) {
-      #section-5 div ul {
-        display: grid;
-        grid-template-columns: 60% auto;
-        grid-template-areas: "gallery-1 gallery-2" "gallery-1 gallery-3"; } }
-    #section-5 div ul li img {
-      width: 100%; }
-    @media (min-width: 768px) {
-      #section-5 div ul .gallery-1 {
+      #section-5 ul .gallery-1 {
         grid-area: gallery-1; } }
-    @media (min-width: 992px) {
-      #section-5 div ul .gallery-1 {
-        grid-area: gallery-1; } }
+  #section-5 ul .gallery-2 {
+    background-image: url("../img/section-5/peachcereal.jpg"); }
     @media (min-width: 768px) {
-      #section-5 div ul .gallery-2 {
+      #section-5 ul .gallery-2 {
         grid-area: gallery-2; } }
     @media (min-width: 992px) {
-      #section-5 div ul .gallery-2 {
+      #section-5 ul .gallery-2 {
         grid-area: gallery-2; } }
+  #section-5 ul .gallery-3 {
+    background-image: url("../img/section-5/breakfastcupcake.jpg"); }
     @media (min-width: 768px) {
-      #section-5 div ul .gallery-3 {
+      #section-5 ul .gallery-3 {
         grid-area: gallery-3; } }
     @media (min-width: 992px) {
-      #section-5 div ul .gallery-3 {
+      #section-5 ul .gallery-3 {
         grid-area: gallery-3; } }
 /* =============
     Section 6

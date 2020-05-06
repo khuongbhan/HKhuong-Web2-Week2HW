@@ -9,39 +9,6 @@
         grid-template-columns: auto 1200px auto;
         grid-template-areas: ". section-2-container .";
     }
-
-
-    // >div {
-    //     @include lg {
-    //         display: grid;
-    //         grid-template-columns: 40% auto;
-            
-    //     }
-
-    //     @include xl {
-    //         grid-area: section-2-container;
-    //     }
-
-        
-
-        // aside {
-        //     background-image: url('../img/section-2/plateofdonuts.jpg');
-        //     background-size: cover;
-        //     height: 516px;
-
-        //     @include md {
-        //         grid-area: section-2-image;
-        //         height: 550px;
-        //     }
-
-        //     @include lg {
-        //         height: 650px;
-        //     }
-
-        //     @include xl {
-        //         height: 740px;
-        //     }
-        // }
     
 
     .section-2-container {

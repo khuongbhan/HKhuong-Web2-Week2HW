@@ -3,83 +3,83 @@
 ============= */
 #section-5 {
 
-    div {
+    @include xl {
         display: grid;
-        grid-template-areas: ". section-4 .";
+        grid-template-columns: auto 1200px auto;
+        grid-template-areas: ". section-5 .";
+    }
 
-        ul {
-            grid-area: section-4;
-            gap: 20px;
-            // grid-row-gap: 10px;
-            // grid-column-gap: 10px;
+    ul {
+        display: grid;
+        grid-template-rows: repeat(3, 296px);
+        grid-gap: 20px;
 
+        @include md {
+            grid-template-columns: 50% auto;
+            grid-template-rows: repeat(3, 340px);
+            grid-template-areas: 
+            "gallery-1 gallery-1"
+            "gallery-1 gallery-1"
+            "gallery-2 gallery-3";
+
+        }
+
+        @include lg {
+            grid-template-columns: 60% auto;
+            grid-template-areas: 
+            "gallery-1 gallery-2"
+            "gallery-1 gallery-3";
+        }
+
+        @include xl {
+            grid-area: section-5;
+        }
+
+
+        li {
+            background-position: center;
+            background-size: cover;
+        }
+
+        .gallery-1 {
+            background-image: url('../img/section-5/prettycupoftea.jpg');
+            
             @include md {
-                display: grid;
-                grid-template-columns: 50% auto;
-                grid-template-areas: 
-                "gallery-1 gallery-1"
-                "gallery-2 gallery-3";
+                grid-area: gallery-1;
+                background-position: center top;
+
+            }
+            @include lg {
+                grid-area: gallery-1;
+
+            }
+        }
+
+        .gallery-2 {
+            background-image: url('../img/section-5/peachcereal.jpg');
+            @include md {
+                grid-area: gallery-2;
+
+            }
+            @include lg {
+                grid-area: gallery-2;
+
+            }
+        }
+
+        .gallery-3 {
+            background-image: url('../img/section-5/breakfastcupcake.jpg');
+            @include md {
+                grid-area: gallery-3;
 
             }
 
             @include lg {
-                display: grid;
-                grid-template-columns: 60% auto;
-                grid-template-areas: 
-                "gallery-1 gallery-2"
-                "gallery-1 gallery-3";
-
+                grid-area: gallery-3;
             }
-
-            // @include md {
-            //     display: grid;
-            //     grid-template-columns: 50% auto;
-            //     grid-template-areas: 
-            //     "gallery-1 gallery-1"
-            //     "gallery-2 gallery-3";
-
-            // }
-
-            li {
-                img {
-                    width: 100%;
-                }
-            }
-
-            .gallery-1 {
-                @include md {
-                    grid-area: gallery-1;
-
-                }
-                @include lg {
-                    grid-area: gallery-1;
-
-                }
-            }
-
-            .gallery-2 {
-                @include md {
-                    grid-area: gallery-2;
-
-                }
-                @include lg {
-                    grid-area: gallery-2;
-
-                }
-            }
-
-            .gallery-3 {
-                @include md {
-                    grid-area: gallery-3;
-
-                }
-
-                @include lg {
-                    grid-area: gallery-3;
-                }
-            }
-
-
         }
+
+
     }
+    
 }
