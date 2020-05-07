@@ -24,7 +24,7 @@
         aside {
             text-align: center; 
             margin-bottom: 34px;
-            
+
             @include md {
                 margin-bottom: 46px;
             }
@@ -33,7 +33,7 @@
         section {
             display: grid;
             grid-template-columns: 15px auto 15px;
-            grid-template-areas: ". section 6 .";
+            grid-template-areas: ". section-6 .";
             text-align: justify;
 
             @include md {
@@ -47,6 +47,7 @@
 
     }
 }
+
 
     
 

@@ -624,7 +624,7 @@ textarea {
   #section-6 > div section {
     display: grid;
     grid-template-columns: 15px auto 15px;
-    grid-template-areas: ". section 6 .";
+    grid-template-areas: ". section-6 .";
     text-align: justify; }
     @media (min-width: 768px) {
       #section-6 > div section {
