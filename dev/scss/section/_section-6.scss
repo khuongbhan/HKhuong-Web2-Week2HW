@@ -2,77 +2,51 @@
     Section 6
 ============= */
 #section-6 {
-    padding-top: 40px;
+    padding: 41px 0 36px;
+    p {
+        color: #C15307;
+    }
+
+    @include xl {
+        display: grid;
+        grid-template-columns: auto 1200px auto;
+        grid-template-areas: ". section-6 .";
+    }
     
-    div {
-        @include sm {
+    >div {
+
+        @include xl {
             display: grid;
-            grid-template-columns: auto 35% auto;
-            grid-template-areas: ". section-6-aside ."
-            "section-6-content section-6-content section-6-content";
-        }
-
-        @include md {
-            display: grid;
-            grid-template-columns: auto 35% auto;
-            grid-template-areas: ". section-6-aside ."
-            "section-6-content section-6-content section-6-content";
-        }
-        // display: grid;
-        // grid-template-columns: 1fr 1fr 1fr;
-        // grid-template-areas: ". section-6-aside ."
-        // "section-6-content section-6-content section-6-content";
-
-        @include lg {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-areas: "section-6-aside section-6-content";
-
-        }
-
-        // @include md {
-        //     display: grid;
-        //     grid-template-columns: 1fr 1fr;
-        //     grid-template-areas: ". section-6-aside ."
-        //     "section-6-content section-6-content";
-
-        // }
-
-        .section-6-content {
-            @include lg {
-                grid-area: section-6-content;
-            }
-            @include md {
-                grid-area: section-6-content;
-            }
-            @include sm {
-                grid-area: section-6-content;
-            }
-            
-            p {
-                color: #C15307;
-                margin: 10px;
-            }
-
-
+            grid-template-columns: 35% auto;
+            grid-area: section-6;
         }
 
         aside {
-            @include lg { 
-                grid-area: section-6-aside;
-            }
-            @include md { 
-                grid-area: section-6-aside;
-            }
-            @include sm { 
-                grid-area: section-6-aside;
-            }
-            // grid-area: section-6-aside;
+            text-align: center; 
+            margin-bottom: 34px;
             
+            @include md {
+                margin-bottom: 46px;
+            }
+        }
+            
+        section {
+            display: grid;
+            grid-template-columns: 15px auto 15px;
+            grid-template-areas: ". section 6 .";
+            text-align: justify;
+
+            @include md {
+                grid-template-columns: auto 70% auto;
+            }
+
+            >div {
+                grid-area: section-6;
+            }
         }
 
     }
+}
 
     
 
-}

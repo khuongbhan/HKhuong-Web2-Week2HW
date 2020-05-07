@@ -25,15 +25,16 @@
         }
 
         @include md {
-            height: 516px;
+            height: 575px;
         }
 
         @include lg {
-            height: 683px;
+            height: 625px;
         }
 
         @include xl {
-            max-width: 1025px;
+            // max-width: 1025px;
+            height: 682px;
         }
     }
 }
