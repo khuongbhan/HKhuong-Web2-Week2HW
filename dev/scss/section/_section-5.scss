@@ -27,6 +27,9 @@
 
         @include lg {
             grid-template-columns: 60% auto;
+            grid-template-rows: repeat(2, 340px);
+            grid-gap: 20px;
+
             grid-template-areas: 
             "gallery-1 gallery-2"
             "gallery-1 gallery-3";

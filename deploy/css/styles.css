@@ -566,6 +566,8 @@ textarea {
   @media (min-width: 992px) {
     #section-5 ul {
       grid-template-columns: 60% auto;
+      grid-template-rows: repeat(2, 340px);
+      grid-gap: 20px;
       grid-template-areas: "gallery-1 gallery-2" "gallery-1 gallery-3"; } }
   @media (min-width: 1200px) {
     #section-5 ul {
