@@ -372,9 +372,66 @@ textarea {
 /* =============
     Navigation
 ============= */
+#nav-container ul {
+  height: 100%;
+  text-align: right; }
+  @media (min-width: 992px) {
+    #nav-container ul {
+      display: flex;
+      justify-content: flex-end; } }
+  #nav-container ul li {
+    margin-bottom: 20px; }
+    @media (min-width: 992px) {
+      #nav-container ul li {
+        margin: 0 30px 0 0;
+        align-items: center;
+        display: flex; } }
+    #nav-container ul li a:link,
+    #nav-container ul li a:visited {
+      color: #C15307;
+      text-decoration: none; }
+    #nav-container ul li a:hover,
+    #nav-container ul li a:active {
+      color: #8F490C; }
+
 /* =============
     Header
 ============= */
+header {
+  background-color: #fff;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%; }
+  header > div {
+    display: grid;
+    grid-template-areas: " logo burger " " nav nav ";
+    grid-template-columns: 80% auto; }
+    header > div section i {
+      color: #C15307; }
+    header > div #logo-container {
+      grid-area: logo;
+      padding: 20px;
+      color: #C15307; }
+    header > div #burger-container {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      grid-area: burger;
+      padding: 20px; }
+      @media (min-width: 992px) {
+        header > div #burger-container {
+          display: none !important; } }
+      header > div #burger-container i {
+        cursor: pointer; }
+    header > div #nav-container {
+      grid-area: nav;
+      display: none;
+      padding: 20px;
+      background-color: #EDBE92; }
+      @media (min-width: 992px) {
+        header > div #nav-container {
+          display: block !important; } }
 /* =============
     Footer
 ============= */
@@ -403,23 +460,7 @@ textarea {
   height: 684px;
   padding-bottom: 59px; }
   #section-1 .title-container {
-    color: white;
-    font-size: 32px; }
-    @media (min-width: 576px) {
-      #section-1 .title-container {
-        position: absolute;
-        top: 55px;
-        left: 27px; } }
-    @media (min-width: 768px) {
-      #section-1 .title-container {
-        position: absolute;
-        top: 82px;
-        left: 167px; } }
-    @media (min-width: 992px) {
-      #section-1 .title-container {
-        position: absolute;
-        left: 118px;
-        top: 183px; } }
+    padding-top: 150px; }
   @media (min-width: 576px) {
     #section-1 {
       background-position-x: -110px;
