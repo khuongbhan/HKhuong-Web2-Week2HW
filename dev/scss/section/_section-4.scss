@@ -33,9 +33,9 @@
             grid-area: content;
             h3 {
                 color: $footer-orange;
-                font-family: 'Playfair Display';
+                // font-family: 'Playfair Display';
                 text-align: center;
-                font-size: 27px;
+                font-size: rem-calc(26px);
             }
         }
 

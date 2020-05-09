@@ -59,10 +59,10 @@
         padding-bottom: 59px;
     }
 
-    @include xl {
-        grid-template-columns: auto 1025px auto;
-        max-width: 1025px;
-        height: 684px;
-    }
+    // @include xl {
+    //     grid-template-columns: auto 1025px auto;
+    //     max-width: 1025px;
+    //     height: 684px;
+    // }
     
 }

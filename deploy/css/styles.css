@@ -345,10 +345,13 @@ ul {
 body {
   font-family: 'Didot', serif; }
 
-h1 {
+h1, h3 {
   font-family: 'Playfair Display'; }
 
-h2, h3, h4 {
+h2, h4 {
+  font-family: 'Didot'; }
+
+p {
   font-family: 'Didot'; }
 
 /* =============
@@ -476,11 +479,6 @@ header {
       background-position-x: 0;
       height: 684px;
       padding-bottom: 59px; } }
-  @media (min-width: 1200px) {
-    #section-1 {
-      grid-template-columns: auto 1025px auto;
-      max-width: 1025px;
-      height: 684px; } }
 /* =============
     Section 2
 ============= */
@@ -512,12 +510,12 @@ header {
       border-top: 2px solid #E4A468; }
     #section-2 .section-2-container section .head1 {
       color: #C15307;
-      font-size: 25px;
+      font-size: 1.625rem;
       text-align: center;
       font-weight: bold; }
     #section-2 .section-2-container section .paragraph1 {
       color: #8F490C;
-      font-size: 16px;
+      font-size: 1rem;
       text-align: center; }
   #section-2 .section-2-container aside {
     background-image: url("../img/section-2/plateofdonuts.jpg");
@@ -578,9 +576,8 @@ header {
     grid-area: content; }
     #section-4 .section-4-container .section-4-content h3 {
       color: #E4A468;
-      font-family: 'Playfair Display';
       text-align: center;
-      font-size: 27px; }
+      font-size: 1.625rem; }
   #section-4 .section-4-container .divider2 {
     grid-area: d2; }
     #section-4 .section-4-container .divider2 hr {
@@ -647,7 +644,8 @@ header {
 #section-6 {
   padding: 41px 0 36px; }
   #section-6 p {
-    color: #C15307; }
+    color: #C15307;
+    font-size: 1rem; }
   @media (min-width: 1200px) {
     #section-6 {
       display: grid;
