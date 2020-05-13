@@ -414,8 +414,13 @@ header {
       color: #C15307; }
     header > div #logo-container {
       grid-area: logo;
-      padding: 20px;
-      color: #C15307; }
+      padding: 20px; }
+      header > div #logo-container a:link,
+      header > div #logo-container a:visited {
+        color: #C15307;
+        text-decoration: none; }
+      header > div #logo-container a:hover {
+        color: #8F490C; }
     header > div #burger-container {
       display: flex;
       align-items: center;
